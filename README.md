@@ -1,2 +1,2 @@
 # Bull-Cow-Game
-Following along with C++ tutorial 
+Following along with a C++ tutorial 
