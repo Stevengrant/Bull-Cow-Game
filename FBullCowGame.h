@@ -8,7 +8,8 @@ struct FBullCowCount
 };
 enum class EGuessStatus {
 	OK,
-	Wrong_Length
+	Wrong_Length,
+	Not_Isogram
 };
 class FBullCowGame {
 public:
@@ -29,6 +30,7 @@ public:
 private:
 	int MyCurrentTry = 1;
 	int MyMaxTries = GetHiddenWordLength() * 2;
+	bool isIsogram()const;
 	std::string MyHiddenWord;
 	FBullCowCount BCCount;
 	std::string Guess;
